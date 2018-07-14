@@ -11,7 +11,8 @@ contract RegisterDonor is Ownable {
 		uint dob;
 		bool isAvailable;//changes to true on death
 		bool optIn; //for having possibilitty to opt out...later
-		string location;//will try codes for location later
+	    uint lat;
+	    uint long;
 	}
 
 	Donor[] public donors;
@@ -19,9 +20,9 @@ contract RegisterDonor is Ownable {
 
 
 
-function addDonor(uint[] _pledgedOrgans, string _aadharHash, string _bloodGroup,uint _dob,string _location)  external {
+function addDonor(uint[] _pledgedOrgans, string _aadharHash, string _bloodGroup,uint _dob,uint _lat,uint _long)  external {
         
-        uint id = donors.push(Donor(msg.sender, _aadharHash,_bloodGroup,_dob,false,true,_location)) - 1;
+        uint id = donors.push(Donor(msg.sender, _aadharHash,_bloodGroup,_dob,false,true,_lat,_long)) - 1;
         pledged_organs[id] = _pledgedOrgans;
       
      }
