@@ -45,7 +45,7 @@ export default class Wishlist extends React.Component<RouteComponentProps<{}>, {
                 </tbody>
             </table>
             <div className="padding-left-135">
-                <input type="Submit" value="Submit" />
+                <input type="Submit" className="btn btn-primary btn-lg" value="Submit" />
             </div>
         </div>;
     }
