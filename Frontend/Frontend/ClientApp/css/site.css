@@ -64,8 +64,8 @@
         text-overflow: ellipsis;
     }
 
-    table tbody tr select {
-        width:200px;
+    .selectMultiple {
+        width: 200px;
         height: 200px !important;
     }
 

@@ -2,7 +2,7 @@
 import { Link, RouteComponentProps } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-const Donor =     { Name: 'Aman Preet Singh', AadharId: 'ADHAR54321A', DateOfBirth: '8/10/1989', Bloodgroup: 'B+', OrgansToDonate: 'liver,lungs,heart,pancreas,intestines' };
+const Donor = { Name: 'Aman Preet Singh', AadharId: 'ADHAR54321A', DateOfBirth: '8/10/1989', Bloodgroup: 'B+', OrgansToDonate: 'liver,lungs,heart,pancreas,intestines' };
 
 export default class SaveALife extends React.Component<any, any> {
     constructor(props: any) {
@@ -35,11 +35,6 @@ export default class SaveALife extends React.Component<any, any> {
                         <td><input type="text" disabled value={this.state.DateOfBirth} /></td>
                     </tr>
                     <tr>
-                        <td>Death Date</td>
-                        <td>:</td>
-                        <td><input type="text"  /></td>
-                    </tr>
-                    <tr>
                         <td>Blood Group</td>
                         <td>:</td>
                         <td><input type="text" disabled value={this.state.Bloodgroup} /></td>
@@ -47,7 +42,17 @@ export default class SaveALife extends React.Component<any, any> {
                     <tr>
                         <td>Organs to donate</td>
                         <td>:</td>
-                        <td><input type="text" disabled value={this.state.OrgansToDonate}  /></td>
+                        <td><input type="text" disabled value={this.state.OrgansToDonate} /></td>
+                    </tr>
+                    <tr>
+                        <td>Death Date</td>
+                        <td>:</td>
+                        <td><input type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>Location</td>
+                        <td>:</td>
+                        <td><input type="text" /></td>
                     </tr>
                     <tr>
                         <td>Hospital Notes</td>
