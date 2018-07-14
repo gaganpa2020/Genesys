@@ -1,6 +1,7 @@
 pragma solidity ^0.4.24;
 
 import "./Ownable.sol";
+import "./RegisterDonor.sol";
 
 contract RegisterRecipient is RegisterDonor {
 	struct Recipient{
