@@ -8,7 +8,7 @@ export default class Wishlist extends React.Component<RouteComponentProps<{}>, {
             <h1>
                 Wishlist Registration Form</h1>
 
-            <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum . </p>
+            <p>Hey, we are hear to help you. Give us your details & we will find a match for your need. Get well soon :)</p>
             <table>
                 <tbody>
                     <tr>
