@@ -13,6 +13,6 @@ export const routes = <Layout>
     <Route path='/counter' component={Counter} />
     <Route path='/donarregistration' component={DonarRegistration} />
     <Route path='/wishlist' component={Wishlist} />
-    <Route path='/save a life'component={SaveALife} />
+    <Route path='/savealife'component={SaveALife} />
     <Route path='/fetchdata/:startDateIndex?' component={ FetchData } />
 </Layout>;
