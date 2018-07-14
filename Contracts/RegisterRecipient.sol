@@ -18,6 +18,7 @@ contract RegisterRecipient is RegisterDonor {
 
 	Recipient[] public recipients;
 	mapping(uint => uint[]) public required_organs;
+	//mapping(address => uint) public addressToId;
 
 
 
@@ -25,6 +26,7 @@ function addRecipient(uint[] _requiredOrgans, string _aadharHash, string _bloodG
         
         uint id = recipients.push(Recipient(msg.sender, _aadharHash,_bloodGroup,_dob,true,false,_lat,_long)) - 1;
         required_organs[id] = _requiredOrgans;
+
       
      }
 

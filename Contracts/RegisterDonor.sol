@@ -18,6 +18,7 @@ contract RegisterDonor is Ownable {
 
 	Donor[] public donors;
 	mapping(uint => uint[]) public pledged_organs;
+	mapping(address => uint) public addressToId;
 
 
 
@@ -25,6 +26,7 @@ function addDonor(uint[] _pledgedOrgans, string _aadharHash, string _bloodGroup,
         
         uint id = donors.push(Donor(msg.sender, _aadharHash,_bloodGroup,_dob,false,true,_lat,_long,0)) - 1;
         pledged_organs[id] = _pledgedOrgans;
+        addressToId[msg.sender]=id;
       
      }
 
